@@ -1,0 +1,30 @@
+div.container {
+    display: table;
+    width: 100%;
+}
+
+div.container > div { //table rows
+    display: table-row;
+    width: 100%;
+}
+
+.table-col {
+    display: table-cell;
+    width: 20%;
+    padding:1em;
+    text-align: left;
+}
+
+div.table-row:nth-child(even) {
+    background-color: #FEFEFE;
+}
+
+div.table-row:nth-child(odd) {
+    background-color: #BEBEBE;
+}
+
+// is it better to use div.container > div for referring to table rows or is it better to use separate class for that as in 'table-row'?
+
+// how to run a function on loading the page? Only one time. That time.
+
+// var or let inside functions?

@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "Edel",
+  "version": "1.0",
+
+  "description": "Just fooling around",
+
+  "icons": {
+    "48": "icons/edel-48.png"
+  },
+
+  "permissions": [
+    "activeTab",
+    "tabs"
+  ],
+
+  "browser_action": {
+    "default_title": "Edel",
+    "default_popup": "popup/edel.html"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["edel.js"]
+    }
+  ]
+
+}
