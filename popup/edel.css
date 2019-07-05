@@ -37,12 +37,15 @@ div.table-row:nth-child(odd) {
     text-align: center;
 }
 
-.floating-button > input{
+.floating-button > input {
     width: 100%;
     height: 100%;
     display: block;
 }
 
+.floating-button > div {
+    display: inline-block;
+}
 
 // is it better to use div.container > div for referring to table rows or is it better to use separate class for that as in 'table-row'?
 
