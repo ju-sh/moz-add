@@ -1,6 +1,7 @@
 div.container {
     display: table;
     width: 100%;
+    margin-top: 5%;
 }
 
 div.container > div { //table rows
@@ -16,12 +17,32 @@ div.container > div { //table rows
 }
 
 div.table-row:nth-child(even) {
-    background-color: #FEFEFE;
+    background-color: #EFEFEF;
 }
 
 div.table-row:nth-child(odd) {
     background-color: #BEBEBE;
 }
+
+#buttons-header {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+}
+
+.floating-button {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+.floating-button > input{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
 
 // is it better to use div.container > div for referring to table rows or is it better to use separate class for that as in 'table-row'?
 
